@@ -1,0 +1,13 @@
+<div class="search">
+  <input
+    type="text"
+    name="text"
+    id="text"
+    placeholder="Enter City Name"
+    #cityName
+    class="search-input"
+  />
+  <button class="search-button" (click)="getCity(cityName.value)">
+    Search
+  </button>
+</div>
