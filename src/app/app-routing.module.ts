@@ -9,6 +9,7 @@ const routes: Routes = [
   { path: 'today', component: WeatherTodayComponent },
   { path: 'details', component: DetailsPageComponent },
   { path: 'seven-days', component: WeatherInSevenDaysComponent },
+  { path: '', redirectTo: '/today', pathMatch: 'full' },
 ];
 
 @NgModule({
