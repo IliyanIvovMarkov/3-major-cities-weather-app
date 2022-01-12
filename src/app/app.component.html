@@ -1,4 +1,13 @@
-<div class="weather-app-container">
+<div class="container">
   <app-search></app-search>
-  <app-city-weather-info></app-city-weather-info>
+  <a routerLink="/today" routerLinkActive="active" class="router-button">
+    Today
+  </a>
+  <a routerLink="/seven-days" routerLinkActive="active" class="router-button">
+    7 Days
+  </a>
+
+  <div class="container">
+    <app-city-weather-info></app-city-weather-info>
+  </div>
 </div>
