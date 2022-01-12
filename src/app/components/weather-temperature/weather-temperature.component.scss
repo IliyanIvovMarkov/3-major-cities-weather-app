@@ -1,0 +1,20 @@
+.temp {
+  font-size: 60px;
+}
+.degr {
+  font-size: 20px;
+}
+.temp-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.multiple-day-container-column {
+  display: flex;
+  flex-direction: column;
+}
+.multiple-day-container-row {
+  display: flex;
+  flex-direction: row;
+}

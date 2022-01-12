@@ -1,0 +1,9 @@
+<div>
+  <h1>{{city}}</h1>
+
+  <div [class.multiple-day-container-column] = "days.length > 2" [class.multiple-day-container-row] = "days.length < 2">
+    <app-day-forecast *ngFor="let day of days" [dayForcast]="day"></app-day-forecast>
+
+  </div>
+</div>
+

@@ -1,0 +1,7 @@
+<div class="forecast-container">
+  <h2>{{ dayForcast?.day }}</h2>
+
+  <app-weather-icon [forecast]="dayForcast?.forecast"></app-weather-icon>
+  <app-weather-temperature [temperature]="dayForcast?.temp"></app-weather-temperature>
+
+</div>
