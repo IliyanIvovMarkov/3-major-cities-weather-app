@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+.container {
+  max-width: 500px;
+  min-height: 300px;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
+  color: #42428f;
+  font-family: monospace;
+}
+.router-button {
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px 10px 5px 0px;
+  transition-duration: 0.5s;
+  border: 2px solid #5c56b3;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0);
+  &:hover {
+    color: white;
+    background-color: #5c56b3;
+  }
+}
