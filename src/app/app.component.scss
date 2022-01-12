@@ -1,1 +1,11 @@
-
+.weather-app-container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 8px;
+  color: #42428f;
+  font-family: monospace;
+}

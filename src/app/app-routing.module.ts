@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-import { WeatherTodayComponent } from './components/weather-today/weather-today.component';
-import { DetailsPageComponent } from './components/details-page/details-page.component';
-import { WeatherInSevenDaysComponent } from './components/weather-in-seven-days/weather-in-seven-days.component';
+import {WeatherInSevenDaysComponent} from "./components/weather-in-seven-days/weather-in-seven-days.component";
+import {DetailsPageComponent} from "./components/details-page/details-page.component";
+import {WeatherTodayComponent} from "./components/weather-today/weather-today.component";
 
 const routes: Routes = [
+  { path: 'seven-days/:city', component: WeatherInSevenDaysComponent },
   { path: 'today', component: WeatherTodayComponent },
-  { path: 'details', component: DetailsPageComponent },
-  { path: 'seven-days', component: WeatherInSevenDaysComponent },
+
+  { path: 'details/:city', component: DetailsPageComponent },
   { path: '', redirectTo: '/today', pathMatch: 'full' },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { enableTracing: true })],
-  exports: [RouterModule],
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

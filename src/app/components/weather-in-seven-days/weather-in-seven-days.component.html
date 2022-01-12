@@ -1,12 +1,9 @@
 <div>
-  <h1>London</h1>
-  <div class="days-of-the-week-container">
-    <h2 class="day-of-the-week">Monday</h2>
-    <h2>Tuesday</h2>
-    <h2>Wednesday</h2>
-    <h2>Thursday</h2>
-    <h2>Friday</h2>
-    <h2>Saturday</h2>
-    <h2>Sunday</h2>
+  <h1>{{city}}</h1>
+
+  <div [class.multiple-day-container-column] = "days.length > 2" [class.multiple-day-container-row] = "days.length < 2">
+    <app-day-forecast *ngFor="let day of days" [dayForcast]="day"></app-day-forecast>
+
   </div>
 </div>
+
